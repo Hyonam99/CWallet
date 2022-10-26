@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+  <link rel="stylesheet" href="./assets/css/payment.css">
+  <link rel="stylesheet" href="./assets/css/paymentmobile.css">
+  <link rel="stylesheet" href="./assets/css/typography_color.css">
+  <script src="https://kit.fontawesome.com/eed14445bc.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <link rel="shortcut icon" href="/assets/images/c-wallet img.png" type="image/x-icon" />
+</head>
+
+<body>
+
+<div id="navLogoOnly">
+    <nav class="navbar2">
+        <div class="container d-flex h-60" >
+            <a href="home.html"><img src="./assets/images/altru-funds-dark.svg" alt="Logo" class="logo" /></a> 
+        </div>
+    </nav>
+</div>
+
+<section id="main-content-section">
+    <div class="left-main-section">
+        <a href="home.html" class="go-back-sign"><<span>Go back</span></a>
+        <p>You're contributing to</p>
+        <h2 class="h2">Support 20 Underprivileged girls for school fees</h2>
+        <h3 class="h3">Guest checkout <span>Have an account?</span><a href="login.html">Log in</a></h3>
+
+        <div class="payment-form-container">
+            <form action="" class="payment-form">
+                <div class="form-group-container">
+                    <div class="form-groups">
+                        <label for="">Full name<span>*</span></label required>
+                        <input type="text" placeholder="Enter name">
+                    </div>
+                    
+                    <div class="form-groups">
+                        <label for="">Email<span>*</span></label required>
+                        <input type="text" placeholder="Enter email">
+                    </div>
+                </div>
+
+                
+                <div class="choose-payment-container">
+                    <h3>Choose a payment method</h3>
+                    
+                    <div class="radio-btn-container">
+                        <div class="radio-btn-input">
+                            <input type="radio">
+                            <label for="">Pay by Credit Card</label>
+                        </div>
+
+                        <div class="radio-btn-input">
+                            <input type="radio">
+                            <label for="">Pay by Bank Transfer</label>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox"><span>I agree to the <a href="">Terms of Use</a> and have read and understand the <a href="">Privacy Policy</a> </span>
+
+                </div>
+
+                <div class="leave-a-comment-section">
+                    <h3>Leave a comment</h3>
+                
+                    <textarea name="" id="comment-area" cols="100" rows="10"></textarea>
+
+                </div>
+                
+
+                     
+                
+
+            </form>
+            <!-- ****MODAL STRUCTURE**** -->
+            <div id="first-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal-btn">&times;</span>
+                    <div class="bank-container">
+                        <h3 class="b-info">GT BANK</h3>
+                        <h2 class="b-info">0227048798</h2>
+                        <p class="b-info">Use this account for this transaction only</p>
+                        <p class="b-info">Account expires in 30 minutes</p>
+                    </div>
+                    <button id="sent-money-btn" class="donationSuccess" onclick="donationSuccess()">I've sent the money</button>
+                </div>
+                    
+            </div>
+            <button id="donate-now-btn" class="save-cont-btn">Donate now</button>
+            <button class="go-up-btn">^</button>
+        </div>
+    </div>
+    
+    <div class="right-main-section">
+        <div class="contribution-summary">
+            <h3 class="h3">Contribution summary</h3>
+            <p>Make a contribution</p>
+
+            <div class="display-amount-container">
+                <div class="naira-sign">&#8358;</div>
+                <div class="d-amount">&#8358;10,000</div>
+            </div>
+
+            <div class="subtotal-container">
+                <div class="subtotal">Subtotal</div>
+                <div class="s-total">&#8358;10,000</div>    
+            </div>
+       
+            <div class="total-container">
+                <div class="total">TOTAL:</div>
+                <div class="t-amount">&#8358;10,000</div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+ 
+  <!-- <h2>Animated Modal with Header and Footer</h2> -->
+
+<!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
+
+<!-- The Modal -->
+<!-- <div id="myModal" class="modal"> -->
+
+  <!-- Modal content -->
+  <!-- <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div> -->
+
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/payment.js"></script>
+</body>
+
+</html>

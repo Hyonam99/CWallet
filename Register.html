@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+
+    <link rel="stylesheet" href="./assets/css/typography_color.css" /> 
+
+    <!-- <link rel="stylesheet" href="style.css"> --> 
+
+    <link  rel="shortcut icon" href="/assets/images/c-wallet img.png" type="image/x-icon" />
+ 
+    <link rel="stylesheet" href="./assets/css/chizoba.css" type="text/css">  
+    <link rel="stylesheet" href="./assets/css/nav.css"> 
+    <link rel="stylesheet" href="./assets/css/nav2.css"> 
+
+    <script src="https://kit.fontawesome.com/a9044e43fa.js"  crossorigin="anonymous" ></script>
+</head>
+<body>
+
+<!-- the navigation bar begins here -->
+<div id="nav">
+    <nav class="navbar">
+        <div class="container d-flex h-60" style="justify-items: flex-end;justify-content: flex-end;" >
+    <a href="home.html"><img src="./assets/images/altru-funds-dark.svg" alt="Logo" class="logo" /></a>
+
+    <div class="mobileContainer d-flex" >
+        <div class="left d-tablet" >
+            <a href='explore.html' class="explore">Explore</a>
+        </div> 
+
+        <div class="right d-flex" >
+            <div class="d-none d-block" id="search-icon">
+                <i class="fas fa-search"  ></i>
+            </div>
+                <button type="button" class='mobileMenu d-mobile' onclick="toggleView('search-icon', 'd-block');toggleView('mobile-menu', 'd-none');toggleView('mobileIcons','fas','fa');toggleView('mobileIcons','fa-stream','fa-close');"><i class="fas fa-stream" id="mobileIcons"></i></button>
+        </div>
+
+        <div class="nav-responsive d-none">
+                <i class="d-tablet fas fa-search"  ></i>
+                <a href="login.html" class="" >Log In</a>
+                <a href="./Register.html" class="btn btn-color" >+ Start a project</a> 
+        </div>
+    </div>
+
+        </div> 
+        <div class=" d-none" id="mobile-menu" > 
+            <div class="container">
+                <a href='explore.html' class="explore text ">Explore</a>
+                <a href='aboutus.html' class="explore text ">About us</a>
+                <a href="login.html" class="btn btn-outline-color " >Log In</a>
+                <a href="./Register.html" class="btn btn-color " >+ Start a project</a> 
+            </div>
+        
+        </div>
+    </nav>
+</div>
+<!-- the navigation bar ends here -->
+    <main>
+        <div class="form-container">
+            <div class="form-wrapper">
+                <form action="" id="form">
+                    <div class="logo-form">
+                        <!-- <img src="./assets/images/c-wallet img.png" alt=""> -->
+                        <img src="./assets/images/altru-funds-dark.svg">
+                    </div>
+    
+                    <h2>Register</h2>
+                    <h4>Hey enter your details to create your account </h4>
+                    <div class="form-control">
+                        <label for="tel"> Full name</label>
+                        <input type="text" placeholder="Full name" class="name" id="name" required>
+                        <small></small>
+
+                      </div>
+                      <div class="form-control">
+                        <label for="email"> Email address</label>
+                        <input type="email" placeholder="Email" class="email" id="email" required>
+                        <small></small>
+
+                      </div>
+                      <div class="form-control">
+                        <label for="phone-number"> Phone Number</label>
+                        <input type="tel" placeholder="Enter phone number" class="tell" id="phone" required>
+                        <small></small>
+                      </div>
+                      <div class="form-control">
+                        <label for="tel"> Password</label>
+                        <input type="password" placeholder="Password" class="password" id="password" required>
+                        <span class="eye" onclick="eyeIcon()">
+       
+                            <i   id ="hide1"class="fa fa-eye "></i>
+                            <i id="hide2" class="fa fa-eye-slash"></i> 
+            
+                          </span>
+            
+                        <small></small>
+                      </div>
+                      <div class="form-control">
+                        <h3>Gender</h3>
+                        <div class="radio-item">
+
+                        <input type="radio" id="male" value="male" name="gender">
+                        <label for="male">Male</label>
+                        </div>
+                        <div class="radio-item">
+
+                        <input type="radio" id="female" value="female" name="gender">
+                        <label for="female">Female</label>
+                        </div>
+                        <div class="radio-item">
+
+                        <input type="radio" id="other" value="other" name="gender">
+                        <label for="other">Other</label>
+                        </div>
+
+                        <div class="form-control">
+                          <button  type="button" class="login" onclick="storage()">Register</button>
+                        </div>
+
+                        <div class="or--text"><h2>or sign in with</h2></div>
+                        <div class="login-socials">
+
+                            <img src="./assets/images/google (1).png"width="19" alt="">
+  
+                            <img src="./assets/images/facebook.png" width="19" alt="">
+                        </div>
+  
+
+                      </div>
+
+
+                      <div class="register">
+                      <h4>Already signed in? <span><a href="login.html">Login </a></span></h4>
+                      </div>
+
+
+        
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/aunthecation.js"></script>
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>

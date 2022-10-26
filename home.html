@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-Wallet || Homepage</title> 
+    <link rel="stylesheet" href="./assets/css/pageload.css">
+    <link rel="stylesheet" href="./assets/css/typography_color.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/nav.css"> 
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <script src="https://kit.fontawesome.com/a9044e43fa.js" crossorigin="anonymous" ></script>
+</head>
+
+<body>
+<!-- On-load Effect -->
+<div class="preloader">
+    <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div> 
+        <div class="indicator"> 
+            <svg width="16px" height="12px">
+            </svg>
+        </div>
+    </div>
+</div>
+<!-- END On-load Effect -->
+
+
+<div id="nav">
+    <nav class="navbar">
+        <div class="container d-flex h-60" style="justify-items: flex-end;justify-content: flex-end;" >
+    <a href="home.html"><img src="./assets/images/altru-funds-dark.svg" alt="Logo" class="logo" /></a>
+
+    <div class="mobileContainer d-flex" >
+        <div class="left d-tabletRes d-desktopRes" >
+            <a href='explore.html' class="explore">Explore</a>
+        </div> 
+
+        <div class="right d-flex" >
+            <div class="d-none d-block" id="search-icon">
+                <i class="fas fa-search"  ></i>
+            </div>
+                <button type="button" class='mobileMenu d-mobile' onclick="toggleView('search-icon', 'd-block');toggleView('mobile-menu', 'd-none');toggleView('mobileIcons','fas','fa');toggleView('mobileIcons','fa-stream','fa-close');"><i class="fas fa-stream" id="mobileIcons"></i></button>
+        </div>
+
+        <div class="nav-responsive d-none">
+                <i class="d-tablet fas fa-search"  ></i>
+                <a href="login.html" class="loginBtn" >Log In</a>
+                <a href="./Register.html" class="btn btn-color startAproject" >+ Start a project</a> 
+        </div>
+    </div>
+
+        </div> 
+        <div class=" d-none" id="mobile-menu" > 
+            <div class="container">
+                <a href='explore.html' class="explore text ">Explore</a>
+                <a href='aboutus.html' class="explore text ">About us</a>
+                <a href="login.html" class="btn btn-outline-color loginBtn" >Log In</a>
+                <a href="./Register.html" class="btn btn-color startAproject" >+ Start a project</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<header id="header" class="mb-5">
+    <div class="container">
+        <div class="overlay ">
+            <h1 class="h2">RAISE FUNDS FOR PERSONAL <span class="text-color h2">NEEDS</span>, CHARITABLE <span class="text-color h2">CAUSES</span> OR CREATIVE <span class="text-color h2">IDEAS</span></h1>
+            <div><a href="explore.html" class="btn btn-outline-white">EXPLORE</a> </div>
+        </div>
+    </div>
+</header>
+
+<section id="featured-fundraisers" class="container overflow-auto">
+    <p class="h3 py-2 mb-2">FEATURED FUNDRAISERS</p>
+    
+    <div class="mb-5 " id="featureProduct">
+ 
+    </div>
+</section>
+
+
+<section id="mission">
+    <h2>OUR MISSION</h2>
+        <div class="container d-flex">
+
+            <div class="m-cont">
+                <i class="fa-solid fa-hand-holding-dollar text-primary d-tabletRes d-desktopRes"></i>
+                <div class="title"><div class="circle-list"></div> Help the helpless</div>
+                <p class="d-tabletRes d-desktopRes">"People appreciate and never forget that helping hand especially when times are tough." Catherine Pulsifer  </p>
+            </div>
+
+            <div class="m-cont">
+                <i class="fa-regular fa-briefcase-medical text-primary d-tabletRes d-desktopRes"></i>
+                <div class="title"><div class="circle-list"></div> Medically assisted</div>
+                <p class="d-tabletRes d-desktopRes">The real road of compassion, that is, giving, helping, assistance and community service, is a road that can be set and declared as your life's purpose Byron Pulsifer  </p>
+            </div>
+
+            <div class="m-cont">
+              <i class="fa-solid fa-people-carry-box text-primary d-tabletRes d-desktopRes"></i>
+                <div class="title"><div class="circle-list"></div> Make a happy world</div>
+                <p class="d-tabletRes d-desktopRes">"Somewhere along the way, we must learn that there is nothing greater than to do something for others."  </p>
+            </div>
+        </div>
+</section>
+
+<section id="subscribe">
+    <div class="container d-flex">
+        <div>
+            <h2 class="h3">Subscribe for Newsletter</h2>
+            <p>Subscribe “to receive updates from people who need your support </p>
+            <p>Add us to your email address to receive these updates.</p>
+        </div>
+        <div class="input">
+            <input type="text" name="" id="" placeholder="Enter email address">
+            <input type="button" value="Subscribe" class="btn btn-color">
+        </div>
+    </div>
+</section>
+
+
+<section id="explore" class="container">
+    <div class="d-flex">
+        <div class="left">
+            <h2 class="h3">EXPLORE</h2>
+            <p>Explore the issues and campaigns from around the world and in your community started by people just like you.</p>
+        </div>
+        <div class="right">
+            <div class="h4 pb-1">Categories </div>
+            <select name="" id="">
+                <option value="">Select a category</option>
+            </select>
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="#" class="active">All</a></li>
+        <li><a href="#">Recent</a></li>
+        <li><a href="#">Trending</a></li>
+    </ul>
+
+
+    <div class="products mb-5 flex-wrap justify-content-around" id="ShowAllFundraising">
+ 
+    </div>
+<div class="show-more text-center ">
+    
+    <a href="explore.html" class="btn btn-outline-color m-auto">Show More</a>
+</div>
+
+</section>
+
+
+    <!--FOOTER SECTION-->
+    <footer id="footer-section">
+        <div class="main-container">
+          <!--logo section-->
+          <div id="logo-footer">
+            <img
+              src="./assets/images/altru-funds.svg"
+              alt="c-wallet image"
+            />
+          </div>
+  
+          <!--info section-->
+          <div class="info-container-footer">
+            <ul>
+              <li><a href="aboutus.html">ABOUT US</a></li>
+              <li>|</li>
+              <li><a href="aboutus.html">HOW IT WORKS</a></li>
+              <li>|</li>
+              <li><a href="aboutus.html">SUPPORT</a></li>
+            </ul>
+  
+            <div class="policy">
+              <a href="terms.html">Terms of use <span>|</span> Privacy policy</a>
+            </div>
+          </div>
+  
+          <!--media section-->
+  
+          <div id="icon-section-footer">
+            <div id="media-footer">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              <!-- <i class="fa-brands fa-whatsapp"></i> -->
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer id="copyright">
+        <div class="main-container"> 
+            <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2022
+            C-wallet. All Right Reserved. 
+        </div>
+      </footer>
+  
+      <div id="scrollup-footer">
+        <i class="fa-solid fa-angle-up"></i>
+      </div>
+  
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/home.js"></script>
+  <script src="/assets/js/auth.js"></script>
+      <script >
+          const auth = new Auth();
+          if(auth.checkLogin()===true){
+             //   auth.displayNone(".loginBtn");
+                auth.changeValue(".loginBtn", "Dashboard")
+                auth.changeAttr(".loginBtn", "analytics.html")
+                auth.changeAttr('.startAproject', "fndraiserCam.html");
+          }
+      </script>
+  <script>
+    // Show loading Effect
+        preloader();
+
+    let exploreFund = new CampaignPreview('ShowAllFundraising');
+    exploreFund.showAllCampaign(10);
+
+    let featureProduct = new CampaignPreview('featureProduct');
+    featureProduct.showAllCampaign(20);
+  </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/admin.css">
+    <link rel="stylesheet" href="./assets/css/typography_color.css">
+    <link rel="stylesheet" href="./assets/css/nav2.css">
+		<link rel="stylesheet" href="./assets/css/footer.css">
+		<script src="https://kit.fontawesome.com/eed14445bc.js" crossorigin="anonymous"></script> 
+	<title>C-Wallet - Admin</title>
+</head>
+
+<body>
+
+	<div id="nav2">
+        <nav class="navbar">
+            <div class="container d-flex h-60" style="justify-items: flex-end;justify-content: flex-end;" >
+        <a href="home.html"><img src="./assets/images/altru-funds-dark.svg" alt="Logo" class="logo" /></a>
+    
+        <div class="mobileContainer d-flex" >
+            <div class="left d-flex" >
+                <a href='explore.html' class="explore bar-left text-link-primary d-desktop">Explore</a>
+                <a href='analytics.html' class="navs text-link-primary d-desktop">Analytic</a>
+                <a href='explore.html' class="navs text-link-primary d-desktop">Drafts</a>
+            </div>
+     
+            <div class="right d-flex" >
+                <div class="d-none d-block" id="search-icon">
+                    <i class="fas fa-search" ></i>
+                </div>
+    
+            <div class="d-mobile" id="initials" >
+              <div class="circle d-flex justify-center  initial">R</div>
+            </div>
+                <button type="button" class='mobileMenu d-mobile' onclick="toggleView('initials', 'd-mobile');toggleView('initials', 'd-none');toggleView('search-icon', 'd-block');toggleView('mobile-menu', 'd-none');toggleView('mobileIcons','fas','fa');toggleView('mobileIcons','fa-stream','fa-close');"><i class="fas fa-stream" id="mobileIcons"></i></button>
+            </div> 
+    
+            <div class="nav-responsive d-none">
+                    <i class="d-tablet fas fa-search"  ></i> 
+                    <a href="./fndraiserCam.html" class="btn btn-color" >+ Start a project</a>  
+                    <div class="d-flex notify">
+                      <i class="fa-regular fa-bell text-dark" style="font-size:20px;"></i>
+                      <span class="dot" ></span>
+                    </div>
+                    <div class="d-flex justify-center">
+                      <div class="circle d-flex justify-center initial">R</div> &nbsp; <span class="d-tablet"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="fullname d-flex "><strong class="d-desktop userFullName">Reina Banks &nbsp;</strong> <span class="d-desktop"><i class="fa-solid fa-chevron-down" ></i> </span>
+                    </div>
+            </div>
+          </nav>
+        </div>
+  
+	<section class="analytics-container">
+		<h2>DASHBOARD</h2>
+
+		<div class="stat-container">
+			
+
+			<div class="each-stat">
+				<img src="./assets/images/analytics-campaign.png" alt="">
+
+				<div>
+					<p>Campaign to be reviewed</p> 
+					<h3 class="camps-rev">-</h3>
+				</div>
+			</div>
+
+            <div class="each-stat">
+				<img src="./assets/images/admin-users (1).png" alt="" class="symbol">
+
+				<div>
+					<p>All Users</p> 
+					<h3 class="all-users"></h3>
+				</div>
+			</div>
+
+            <div class="each-stat">
+				<img src="./assets/images/admin-outsider.png" alt=""  class="symbol">
+
+				<div>
+					<p>Unverified Users</p> 
+					<h3 class="unverified">-</h3>
+				</div>
+			</div>
+
+            <div class="each-stat">
+				<img src="./assets/images/admin-complaints.png" alt=""  class="symbol">
+
+				<div>
+					<p>Unattended complaints</p> 
+					<h3 class="complaints">-</h3>
+				</div>
+			</div>
+
+            <div class="each-stat">
+				<img src="./assets/images/admin-progress.png" alt=""  class="symbol">
+
+				<div class="statdata">
+					<p>Campaigns in progress</p> 
+					<h3 class="camps-in-prog">-</h3>
+				</div>
+			</div>
+
+            
+			</div>
+
+            
+            
+		</div>
+
+		<div class="data-table">
+			<h3>Recent Campaigns</h3>
+
+			<button class="filter"><svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.33333 10.5H9.66667V8.83333H6.33333V10.5ZM0.5 0.5V2.16667H15.5V0.5H0.5ZM3 6.33333H13V4.66667H3V6.33333Z" fill="white"/>
+                </svg> <span>Filter</span>     </button>
+
+            <div class="table">
+                <table id="analytic-table">
+                    <thead>
+                        <tr>
+                            <th>Campaign name</th>
+                            <th>Fundraiser</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Target amount</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody class="table-body">
+                        
+                    </tbody>
+                </table>
+            </div>
+		</div>
+
+	</section>
+
+	<footer id="footer-section">
+    <div class="main-container">
+      <!--logo section-->
+      <div id="logo-footer">
+        <img
+          src="./assets/images/altru-funds.svg"
+          alt="c-wallet image"
+        />
+      </div>
+
+      <!--info section-->
+      <div class="info-container-footer">
+        <ul>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li>|</li>
+          <li><a href="">HOW IT WORKS</a></li>
+          <li>|</li>
+          <li><a href="">SUPPORT</a></li>
+        </ul>
+
+        <div class="policy">
+          <a href="">Terms of use <span>|</span> Privacy policy</a>
+        </div>
+      </div>
+
+      <!--media section-->
+
+      <div id="icon-section-footer">
+        <div id="media-footer">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          <!-- <i class="fa-brands fa-whatsapp"></i> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer id="copyright">
+    <div class="main-container">
+      <p class="copyright-footer">
+        <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2022
+        C-wallet. All Right Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <div id="scrollup-footer">
+    <i class="fa-solid fa-angle-up"></i>
+  </div>
+    
+     <script src="./assets/js/admin.js"></script> 
+		 <script src="./assets/js/script.js"></script>
+		 <script src="/assets/js/auth.js"></script>
+			 <script >
+				 let auth = new Auth();
+				 auth.showInitial('.initial');
+				 auth.showFullName('.userFullName');
+			 </script>
+</body>
+
+</html>

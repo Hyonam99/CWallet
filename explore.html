@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/explore.css" />
+    <link rel="stylesheet" href="./assets/css/typography_color.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/home.css"> 
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <script src="https://kit.fontawesome.com/a9044e43fa.js"  crossorigin="anonymous" ></script>
+        <title>Explore-Page</title>
+</head>
+<body>
+
+<div id="nav">
+    <nav class="navbar">
+        <div class="container d-flex h-60" style="justify-items: flex-end;justify-content: flex-end;" >
+    <a href="home.html"><img src="./assets/images/altru-funds-dark.svg" alt="Logo" class="logo" /></a>
+
+    <div class="mobileContainer d-flex" >
+        <div class="left d-tabletRes d-desktopRes" >
+            <a href='explore.html' class="explore">Explore</a>
+        </div> 
+
+        <div class="right d-flex" >
+            <div class="d-none d-block" id="search-icon">
+                <i class="fas fa-search"  ></i>
+            </div>
+                <button type="button" class='mobileMenu d-mobile' onclick="toggleView('search-icon', 'd-block');toggleView('mobile-menu', 'd-none');toggleView('mobileIcons','fas','fa');toggleView('mobileIcons','fa-stream','fa-close');"><i class="fas fa-stream" id="mobileIcons"></i></button>
+        </div>
+
+        <div class="nav-responsive d-none">
+                <i class="d-tablet fas fa-search"  ></i>
+                <a href="login.html" class="loginBtn" >Log In</a>
+                <a href="./Register.html" class="btn btn-color startAproject" >+ Start a project</a> 
+        </div>
+    </div>
+
+        </div> 
+        <div class=" d-none" id="mobile-menu" > 
+            <div class="container">
+                <a href='explore.html' class="explore text ">Explore</a>
+                <a href='aboutus.html' class="explore text ">About us</a>
+                <a href="login.html" class="btn btn-outline-color loginBtn" >Log In</a>
+                <a href="./Register.html" class="btn btn-color startAproject" >+ Start a project</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    <section class="Explore-section">
+        <!--explore heading--> 
+
+     
+        <section id="contents">
+
+            <section id="explore-page" class="container">
+                <div class="d-flex mb-5">
+                    <div class="left">
+                        <h2 class="h3">EXPLORE</h2>
+                        <p>Explore the issues and campaigns from around the world and in your community started by people just like you.</p>
+                    </div>
+                    <div class="right d-flex">
+                        <div class="cat">
+                            <div class="h4 pb-1">Categories </div>
+                            <select name="" id="catSel">
+                                <option value="">Select a category</option>
+                                <option value="">Select a category</option>
+                                <option value="">Select a category</option>
+                            </select>
+                        </div>
+                        <div class="loc">
+                            <div class="d-desktop">
+                                <div class="h4 pb-1">Location </div>
+                                <select name="" id="locSel">
+                                    <option value="">Select location</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            
+                <ul>
+                    <li><a href="#" class="active">Recent</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Complete</a></li>
+                </ul>
+ 
+    <div class="products mb-5 flex-wrap justify-content-around" id="ShowAllFundraising">
+        <div class="ft-cont">
+            <div class="img">
+                <img src="assets/images/wheel chair.jpg" alt="">
+            </div>
+            <div class="cont">
+                <p class="title">Support the 20 Underprivileged girls for school fees </p>
+                <div class="author"><span class="circle">F</span>by Farida</div>
+                <div class="price">#100,000 <span>raised out of #500,00</span> </div>
+                <div class="progress-bar">
+                    <div class="inner-progress-bar" style="width:45%;"></div>
+                </div> 
+                <div class="duration">
+                    <span>45% <span class="secondary-color">complete</span></span> <span><i class="fas fa-clock"></i> 29 days left</span>
+                </div>
+                <div class="action">
+                    <a href="#" class="btn btn-outline-color"><i class="fas fa-share"></i> SHARE</a>
+                    <a href="#" class="btn btn-color text-white">DONATE NOW</a>
+                </div>
+                <div class="click text-center"><a href="./campaign_details.html">Click to view more</a></div>
+            </div>
+        </div>
+    </div>
+
+
+            </section>
+
+
+        </section>
+    </section>
+
+    <!--FOOTER SECTION-->
+    <footer id="footer-section">
+        <div class="main-container">
+          <!--logo section-->
+          <div id="logo-footer">
+            <img
+              src="./assets/images/altru-funds.svg"
+              alt="c-wallet image"
+            />
+          </div>
+  
+          <!--info section-->
+          <div class="info-container-footer">
+            <ul>
+              <li><a href="aboutus.html">ABOUT US</a></li>
+              <li>|</li>
+              <li><a href="aboutus.html">HOW IT WORKS</a></li>
+              <li>|</li>
+              <li><a href="aboutus.html">SUPPORT</a></li>
+            </ul>
+  
+            <div class="policy">
+              <a href="terms.html">Terms of use <span>|</span> Privacy policy</a>
+            </div>
+          </div>
+  
+          <!--media section-->
+  
+          <div id="icon-section-footer">
+            <div id="media-footer">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              <!-- <i class="fa-brands fa-whatsapp"></i> -->
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer id="copyright">
+        <div class="main-container"> 
+            <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2022
+            C-wallet. All Right Reserved. 
+        </div>
+      </footer>
+  
+      <div id="scrollup-footer">
+        <i class="fa-solid fa-angle-up"></i>
+      </div>
+  
+<script src="/assets/js/script.js"></script>
+
+<script src="/assets/js/explore.js"></script>
+<script src="/assets/js/auth.js"></script>
+    <script >
+        let auth = new Auth();
+        if(auth.checkLogin()===true){
+           //   auth.displayNone(".loginBtn");
+                auth.changeValue(".loginBtn", "Dashboard")
+                auth.changeAttr(".loginBtn", "analytics.html")
+              auth.changeAttr('.startAproject', "fndraiserCam.html");
+        }
+    </script>
+<script>
+    let exploreFund = new CampaignPreview('ShowAllFundraising');
+        exploreFund.showAllCampaign(60);
+</script>
+</body>
+</html>

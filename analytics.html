@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/analytics.css">
+	<link rel="stylesheet" href="./assets/css/mcarousel.css">
+    <link rel="stylesheet" href="./assets/css/typography_color.css">
+    <link rel="stylesheet" href="./assets/css/nav2.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <script src="https://kit.fontawesome.com/a9044e43fa.js"  crossorigin="anonymous" ></script>
+	<title>C-Wallet - Analytics</title>
+</head>
+
+<body> 
+    <div id="nav2">
+        <nav class="navbar">
+            <div class="container d-flex h-60" style="justify-items: flex-end;justify-content: flex-end;" >
+        <a href="home.html"><img src="./assets/images/altru-funds-dark.svg" alt="Logo" class="logo" /></a>
+
+        <div class="mobileContainer d-flex" >
+            <div class="left d-flex" >
+                <a href='explore.html' class="explore bar-left text-link-primary d-desktop">Explore</a> 
+                <a href='explore.html' class="navs text-link-primary d-desktop">Drafts</a>
+            </div>
+
+            <div class="right d-flex" >
+                <div class="d-none d-block" id="search-icon">
+                    <i class="fas fa-search" ></i>
+                </div>
+
+            <div class="d-mobile" id="initials" >
+              <div class="circle d-flex justify-center  initial">R</div>
+            </div>
+                <button type="button" class='mobileMenu d-mobile' onclick="toggleView('initials', 'd-mobile');toggleView('initials', 'd-none');toggleView('search-icon', 'd-block');toggleView('mobile-menu', 'd-none');toggleView('mobileIcons','fas','fa');toggleView('mobileIcons','fa-stream','fa-close');"><i class="fas fa-stream" id="mobileIcons"></i></button>
+            </div> 
+    
+            <div class="nav-responsive d-none">
+                    <i class="d-tablet fas fa-search"  ></i> 
+                    <a href="./fndraiserCam.html" class="btn btn-color" >+ Start a project</a>
+                    <div class="d-flex notify">
+                      <i class="fa-regular fa-bell text-dark" style="font-size:20px;"></i>
+                      <span class="dot" ></span>
+                    </div>
+                    <div class="d-flex justify-center  mouseClick"  onclick="toggleView('smallMenu', 'd-none');">
+                      <div class="circle d-flex justify-center initial">R</div> &nbsp; <span class="d-tablet"><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="fullname d-flex mouseClick"  onclick="toggleView('smallMenu', 'd-none');"><strong class="d-desktop userFullName"> &nbsp;</strong> <span class="d-desktop"><i class="fa-solid fa-chevron-down "  ></i> </span>
+                      
+                        <div id="smallMenu" class="d-none" >
+                          <a href="analytics.html"><i class="fa fa-home"></i>  Dashboard</a>
+                          <a href="fundraiser-profile.html"><i class="fa fa-user"></i> Profile</a> 
+                          <a href='explore.html'><i class="fa fa-bullseye"></i> Explore</a>  
+                          <a href="login.html"><i class="fa fa-sign-out"></i> Logout</a>
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+           
+            </div>
+            <div class="d-none" id="mobile-menu"> 
+                <div class="container"> 
+                    <a href='explore.html' class="explore text ">Explore</a>
+                    <a href='analytics.html' class="explore text ">Analytic</a>
+                    <a href='explore.html' class="explore text ">Drafts</a>
+    
+                    <a href="./fndraiserCam.html" class="btn btn-color " >+ Start a project</a> 
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+	<section class="analytics-container">
+		<h2>Analytics</h2>
+
+		<div class="stat-container">
+			<div class="each-stat">
+				<img src="./assets/images/analytics-campaign.png" alt="">
+                <div>
+                    <p>
+                        Total Campaigns
+                    </p>
+
+                    <h3 class="total-campaign">
+                        
+                    </h3>
+                </div>
+			</div>
+
+			<div class="each-stat">
+				<img src="./assets/images/analytics-received.png" alt="">
+
+				<div>
+					<p>Total Amount received</p> 
+					<h3 class="total-received"></h3>
+				</div>
+			</div>
+
+			<div class="each-stat">
+				<img src="./assets/images/analytics-avgcamp.png" alt="">
+
+				<div>
+					<p>Avg Campaign Open Rates</p> 
+					<h3 class="campaign-open-rate"></h3>
+				</div>
+			</div>
+
+			<div class="each-stat">
+				<img src="./assets/images/analytics-completed.png" alt="">
+
+				<div>
+					<p>Total Completed</p> 
+					<h3 class="completed-campaign"></h3>
+				</div>
+			</div>
+		</div>
+
+        <div class="mobile-stat-container cslideshow-container">
+			<div class="cmySlides cfade each-stat">
+                <div class="cnumbertext">1 / 4</div>
+				<img src="./assets/images/analytics-campaign.png" alt="">
+                <div>
+                    <p>
+                        Total Campaigns
+                    </p>
+
+                    <h3 class="total-campaign">
+                        
+                    </h3>
+                </div>
+			</div>
+
+			<div class="cmySlides cfade each-stat">
+                <div class="cnumbertext">2 / 4</div>
+				<img src="./assets/images/analytics-received.png" alt="">
+
+				<div>
+					<p>Total Amount received</p> 
+					<h3 class="total-received"></h3>
+				</div>
+			</div>
+
+			<div class="cmySlides cfade each-stat">
+                <div class="cnumbertext">3 / 4</div>
+				<img src="./assets/images/analytics-avgcamp.png" alt="">
+
+				<div>
+					<p>Avg Campaign Open Rates</p> 
+					<h3 class="campaign-open-rate"></h3>
+				</div>
+			</div>
+
+			<div class="cmySlides cfade each-stat">
+                <div class="cnumbertext">4 / 4</div>
+				<img src="./assets/images/analytics-completed.png" alt="">
+
+				<div>
+					<p>Total Completed</p> 
+					<h3 class="completed-campaign"></h3>
+				</div>
+			</div>
+
+            <a class="cprev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="cnext" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+
+        <div class="cmobile-dot" style="text-align:center">
+            <span class="cdot" onclick="currentSlide(1)"></span>
+            <span class="cdot" onclick="currentSlide(2)"></span>
+            <span class="cdot" onclick="currentSlide(3)"></span>
+            <span class="cdot" onclick="currentSlide(4)"></span>
+          </div>
+
+		<div class="data-table">
+			<h3>All Campaigns</h3>
+
+            <div class="table">
+                <table id="analytic-table">
+                    <thead>
+                        <tr>
+                            <th>Campaign name</th>
+                            <th>Start date</th>
+                            <th>end date</th>
+                            <th>amount received</th>
+                            <th>target amount</th>
+                            <th>progress</th>
+                            <!-- <th>action</th> -->
+                        </tr>
+                    </thead>
+    
+                    <tbody id="analytic-body">
+                        
+                    </tbody>
+                </table>
+            </div>
+		</div>
+
+	</section>
+
+    <footer id="footer-section">
+        <div class="main-container">
+          <!--logo section-->
+          <div id="logo-footer">
+            <img
+              src="./assets/images/altru-funds.svg"
+              alt="c-wallet image"
+            />
+          </div>
+    
+          <!--info section-->
+          <div class="info-container-footer">
+            <ul>
+              <li><a href="aboutus.html">ABOUT US</a></li>
+              <li>|</li>
+              <li><a href="">HOW IT WORKS</a></li>
+              <li>|</li>
+              <li><a href="">SUPPORT</a></li>
+            </ul>
+    
+            <div class="policy">
+              <a href="">Terms of use <span>|</span> Privacy policy</a>
+            </div>
+          </div>
+    
+          <!--media section-->
+    
+          <div id="icon-section-footer">
+            <div id="media-footer">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              <!-- <i class="fa-brands fa-whatsapp"></i> -->
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer id="copyright">
+        <div class="main-container"> 
+            <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2022
+            C-wallet. All Right Reserved. 
+        </div>
+      </footer>
+    
+      <div id="scrollup-footer">
+        <i class="fa-solid fa-angle-up"></i>
+      </div>
+    
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/analytics.js"></script>
+    <script src="./assets/js/mcarousel.js"></script>
+    <script src="/assets/js/auth.js"></script>
+        <script >
+            let auth = new Auth();
+            auth.showInitial('.initial');
+            auth.showFullName('.userFullName');
+        </script>
+
+</body>
+
+</html>

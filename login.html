@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login  Page</title>
+    <link rel="stylesheet" href="./assets/css/typography_color.css">
+    <link rel="stylesheet" href="./assets/css/chizoba.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="shortcut icon" href="/assets/images/c-wallet img.png" type="image/x-icon" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/eed14445bc.js" crossorigin="anonymous" ></script>
+</head>
+<body>
+  
+<div id="nav">
+    <div id="nav">
+        <nav class="navbar">
+            <div class="container d-flex h-60" style="justify-items: flex-end;justify-content: flex-end;" >
+        <a href="home.html"><img src="./assets/images/altru-funds-dark.svg" alt="Logo" class="logo" /></a>
+    
+        <div class="mobileContainer d-flex" >
+            <div class="left d-tablet" >
+                <a href='explore.html' class="explore">Explore</a>
+            </div> 
+    
+            <div class="right d-flex" >
+                <div class="d-none d-block" id="search-icon">
+                    <i class="fas fa-search"  ></i>
+                </div>
+                    <button type="button" class='mobileMenu d-mobile' onclick="toggleView('search-icon', 'd-block');toggleView('mobile-menu', 'd-none');toggleView('mobileIcons','fas','fa');toggleView('mobileIcons','fa-stream','fa-close');"><i class="fas fa-stream" id="mobileIcons"></i></button>
+            </div>
+    
+            <div class="nav-responsive d-none">
+                    <i class="d-tablet fas fa-search"  ></i>
+                    <a href="login.html" class="" >Log In</a>
+                    <a href="./Register.html" class="btn btn-color" >+ Start a project</a> 
+            </div>
+        </div>
+    
+            </div> 
+            <div class="d-none" id="mobile-menu"> 
+                <div class="container">
+                    <a href='explore.html' class="explore text ">Explore</a>
+                    <a href='aboutus.html' class="explore text ">About us</a>
+                    <a href="login.html" class="btn btn-outline-color " >Log In</a>
+                    <a href="./Register.html" class="btn btn-color " >+ Start a project</a> 
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+    <main>
+        <div class="form-container">
+            <div class="form-wrapper">
+                <form action="" id="form">
+                <div class="logo-form">
+                    <img src="./assets/images/altru-funds-dark.svg" alt="">
+                </div>
+                    <h2>Log in</h2>
+                    <h4>Hey enter your details to sign in to your account </h4>
+                    <div class="form-control">
+                        <label for="tel"> Email address</label>
+                        <input type="email" placeholder="Enter Email" class="email" id="UserName" required>
+                        <small></small>
+                      </div>
+                      <div class="form-control">
+                        <label for="tel"> Password</label>
+                        <input type="password" class="password" placeholder="Password"  id="UserPassword" required>
+                        <span class="eye" onclick="eyeIcon()">
+       
+                            <i  id ="hide1"class="fa fa-eye"></i>
+                            <i id="hide2" class="fa fa-eye-slash"></i>
+            
+                          </span>
+
+                        <small></small>
+                      </div>
+
+                      <div class="remember__me">
+                        <div class="remeber_box">
+                          <input class="check-item" id="rememberMe" type="checkbox" placeholder=" Remember me">
+                          <label for="remember--me">Remember me</label>
+                        </div>
+                          <a class="forgotten--passwaord" href="resetpassword.html">Forgot password?</a>
+                      </div>
+
+                      <div class="form-control">
+                        <button type="button" class="login btn--show-modal" onclick="check()">Login</button>
+                      </div>
+<div class="or--text"><h2>or sign in with</h2></div>
+                      <div class="login-socials">
+
+                          <img src="./assets/images/google (1).png"width="19" alt="">
+
+                          <img src="./assets/images/facebook.png" width="19" alt="">
+                      </div>
+                      <div class="register">
+                      <h4>Don't have an account? <span><a href="Register.html"> Register</a></span></h4>
+                      </div>
+                </form>
+   
+                            <!-- modal -->
+            <div class="modal hidden">
+                <button class="btn--close-modal">&times;</button>
+                <h2 class="modal__header">
+                  There is Error on login<br />
+                  <span class="highlight">please enter correct details</span>
+                </h2>
+               
+              </div>
+              <div class="overlay hidden"></div>
+
+
+            </div>
+          
+        </div>
+    </main>
+
+<script src="assets/js/aunthecation.js"></script>
+<script src="/assets/js/script.js"></script>
+</body>
+</html>

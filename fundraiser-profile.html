@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/typography_color.css">
+  <link rel="stylesheet" href="./assets/css/fundraiser-profile.css">
+  <link rel="stylesheet" href="./assets/css/nav2.css">
+  <link  rel="icon" href="/assets/images/c-wallet img.png" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/a9044e43fa.js" crossorigin="anonymous" ></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+  <title>Profile</title>
+</head>
+<body>
+  
+  <div id="nav2">
+    <nav class="navbar">
+        <div class="container d-flex h-60" style="justify-items: flex-end;justify-content: flex-end;" >
+    <a href="home.html"><img src="./assets/images/altru-funds-dark.svg" alt="Logo" class="logo" /></a>
+
+    <div class="mobileContainer d-flex" >
+        <div class="left d-flex" >
+            <a href='explore.html' class="explore bar-left text-link-primary d-desktop">Explore</a> 
+            <a href='explore.html' class="navs text-link-primary d-desktop">Drafts</a>
+        </div>
+
+        <div class="right d-flex" >
+            <div class="d-none d-block" id="search-icon">
+                <i class="fas fa-search" ></i>
+            </div>
+
+        <div class="d-mobile" id="initials" >
+          <div class="circle d-flex justify-center  initial">R</div>
+        </div>
+            <button type="button" class='mobileMenu d-mobile' onclick="toggleView('initials', 'd-mobile');toggleView('initials', 'd-none');toggleView('search-icon', 'd-block');toggleView('mobile-menu', 'd-none');toggleView('mobileIcons','fas','fa');toggleView('mobileIcons','fa-stream','fa-close');"><i class="fas fa-stream" id="mobileIcons"></i></button>
+        </div> 
+
+        <div class="nav-responsive d-none">
+                <i class="d-tablet fas fa-search"  ></i> 
+                <a href="./fndraiserCam.html" class="btn btn-color" >create campaign</a>
+                <div class="d-flex notify">
+                  <i class="fa-regular fa-bell text-dark" style="font-size:20px;"></i>
+                  <span class="dot" ></span>
+                </div>
+                <div class="d-flex justify-center  mouseClick"  onclick="toggleView('smallMenu', 'd-none');">
+                  <div class="circle d-flex justify-center initial">R</div> &nbsp; <span class="d-tablet"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+                <div class="fullname d-flex mouseClick"  onclick="toggleView('smallMenu', 'd-none');"><strong class="d-desktop userFullName"> &nbsp;</strong> <span class="d-desktop"><i class="fa-solid fa-chevron-down "  ></i> </span>
+                  
+                    <div id="smallMenu" class="d-none" >
+                      <a href="analytics.html"><i class="fa fa-home"></i>  Dashboard</a>
+                      <a href="fundraiser-profile.html"><i class="fa fa-user"></i> Profile</a> 
+                      <a href='explore.html'><i class="fa fa-bullseye"></i> Explore</a>  
+                      <a href="login.html"><i class="fa fa-sign-out"></i> Logout</a>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+       
+        </div>
+        <div class="d-none" id="mobile-menu"> 
+            <div class="container"> 
+                <a href='explore.html' class="explore text ">Explore</a>
+                <a href='analytics.html' class="explore text ">Analytic</a>
+                <a href='explore.html' class="explore text ">Drafts</a>
+
+                <a href="./fndraiserCam.html" class="btn btn-color " >create campaign</a> 
+            </div>
+        </div>
+    </nav>
+</div>
+    <main>
+
+      <h4>Profile</h4>
+      <section class="profile-details">
+        <div id="image-card">
+              <img src="./assets/images/profile-picture-avatar2.jpg" alt="" id="image-picture" >
+        </div>
+        <div class="image-actions">
+          <span class="labelbutton">
+          <label for="profileImage" class="img-button">Browse</label>
+          <input type="file" name="profileImage" id="profileImage" style="visibility:hidden" accept="image/jpeg, image/png, image/jpg">
+        </span>
+          <i class="fa-regular fa-trash-can" onclick="deleteProfileImage()"></i>
+        </div>
+      </section>
+      <!-- <div class="image-test">
+        <img src="" alt="second-image-display" id="second-image">
+      </div>
+       -->
+<!-- the class name fg specifies the div holding each label and input conventionally known as form-group -->
+      <section class="personal-information">
+        <h4>Personal Information</h4>
+        <form id="main-form">
+          <div class="personal-details">
+            <div class="fg">
+            <label for="name">Full Name</label>
+            <input type="text" id="fullName" oninput="checkName()" onblur="" required placeholder="Surname | First Name | Middle Name">
+            <small id = nameError></small>
+          </div>
+
+          <div class="fg">
+            <label for="name">Phone Number <span><a href="#" onclick="editInput()">Edit</a></span></label>
+            <input type="text" id="phoneNumber" class="edit" oninput="checkNumber()" onblur="blur()" placeholder="+234 818 0387 593" required>
+            <small id = numberError></small>
+          </div>
+
+          <div class="fg">
+            <label for="email">Email Address</label>
+            <input type="email" id="emailAddress" oninput="checkEmail()" onblur="" placeholder="someone@example.com" required>
+            <small id = emailError></small>
+          </div>
+
+          <div class="fg">
+            <label for="gender" name="gender">Gender</label>
+            <select name="gender" id="gender">
+              <option value="Choose your gender" selected disabled hidden>Choose your gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+          </div>
+
+          <div class="residential-details">
+            <div class="fg">
+              <label for="address">Residential address  <span><a href="#" onclick="editAddress()">Edit</a></span></label>
+              <input type="text" id="residentialAddress" class="edit" oninput="" onblur="" required placeholder="Street name and House number">
+              <small id = addressError></small>
+            </div>
+
+            <div class="fg">
+              <label for="address">City  <span><a href="#" onclick="editCity()">Edit</a></span></label>
+              <input type="text" id="city" class="edit" oninput="" onblur="" required placeholder="Enter your city">
+              <small id = cityError></small>
+            </div>
+
+            <div class="fg">
+              <label for="address">Country  <span><a href="#" onclick="editCountry()">Edit</a></span></label>
+              <input type="text" id="country" class="edit" oninput="" onblur="" required placeholder="Enter your Country">
+              <small id = countryError></small>
+            </div>
+
+          </div>
+        </form>
+      </section>
+
+      <section class="identification">
+        <h4>Identification</h4>
+        <form>
+          <p>C-Wallet requires a valid id card (voter's id-card, drivers licence or international passport) to be used as a valid means of Identification 
+            for all its intending fundraisers. Note that the system takes a maximum of 3 days to validate the ID 
+            provided before campaigns can be hosted by Users.</p>
+          <div class="fg">
+          <label for="valid-id">Enter your valid id number</label>
+          <input type="tel" id="nin" oninput="checkNin()" onblur="" required placeholder="Enter your NIN">
+          <small id = ninError></small>
+        </div>
+        </form>
+      </section>
+
+      <!-- Button with class name of pf-button is to save the user edited/ updated details to the database -->
+      <button type="button" onclick="saveDetails()" class="pf-button">Update profile</button>
+    </main>
+
+
+    <footer id="footer-section">
+      <div class="main-container">
+        <!--logo section-->
+        <div id="logo-footer">
+          <img
+            src="./assets/images/altru-funds.svg"
+            alt="c-wallet image"
+          />
+        </div>
+
+        <!--info section-->
+        <div class="info-container-footer">
+          <ul>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li>|</li>
+            <li><a href="">HOW IT WORKS</a></li>
+            <li>|</li>
+            <li><a href="">SUPPORT</a></li>
+          </ul>
+
+          <div class="policy">
+            <a href="">Terms of use <span>|</span> Privacy policy</a>
+          </div>
+        </div>
+
+        <!--media section-->
+
+        <div id="icon-section-footer">
+          <div id="media-footer">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            <!-- <i class="fa-brands fa-whatsapp"></i> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer id="copyright">
+      <div class="main-container"> 
+          <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2022
+          C-wallet. All Right Reserved. 
+      </div>
+    </footer>
+
+    <div id="scrollup-footer">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+<script src="/assets/js/script.js"></script>
+<script src="./assets/js/fundraiser-profile.js"></script>
+<script src="/assets/js/auth.js"></script>
+    <script >
+        let auth = new Auth();
+        auth.showInitial('.initial');
+        auth.showFullName('.userFullName');
+    </script>
+</body>
+</html>

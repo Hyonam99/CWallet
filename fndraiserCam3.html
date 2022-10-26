@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/fndraiserCam.css" />
+    <link rel="stylesheet" href="./assets/css/typography_color.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/eed14445bc.js"
+      crossorigin="anonymous"
+    ></script> 
+    <link rel="stylesheet" href="./assets/css/nav2.css">
+    
+    <link
+      rel="shortcut icon"
+      href="/assets/images/c-wallet img.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <section class="screen-container screen3">
+      <!-- NAV SECTION -->
+      <section class="nav-section">
+        
+    <div id="nav2">
+      <nav class="navbar">
+          <div class="container d-flex h-60" style="justify-items: flex-end;justify-content: flex-end;" >
+      <a href="home.html"><img src="./assets/images/altru-funds-dark.svg" alt="Logo" class="logo" /></a>
+
+      <div class="mobileContainer d-flex" >
+          <div class="left d-flex" >
+              <a href='explore.html' class="explore bar-left text-link-primary d-desktop">Explore</a> 
+              <a href='explore.html' class="navs text-link-primary d-desktop">Drafts</a>
+          </div>
+
+          <div class="right d-flex" >
+              <div class="d-none d-block" id="search-icon">
+                  <i class="fas fa-search" ></i>
+              </div>
+
+          <div class="d-mobile" id="initials" >
+            <div class="circle d-flex justify-center  initial">R</div>
+          </div>
+              <button type="button" class='mobileMenu d-mobile' onclick="toggleView('initials', 'd-mobile');toggleView('initials', 'd-none');toggleView('search-icon', 'd-block');toggleView('mobile-menu', 'd-none');toggleView('mobileIcons','fas','fa');toggleView('mobileIcons','fa-stream','fa-close');"><i class="fas fa-stream" id="mobileIcons"></i></button>
+          </div> 
+  
+          <div class="nav-responsive d-none">
+                  <i class="d-tablet fas fa-search"  ></i> 
+                  <a href="./fndraiserCam.html" class="btn btn-color" >+ Start a project</a>
+                  <div class="d-flex notify">
+                    <i class="fa-regular fa-bell text-dark" style="font-size:20px;"></i>
+                    <span class="dot" ></span>
+                  </div>
+                  <div class="d-flex justify-center  mouseClick"  onclick="toggleView('smallMenu', 'd-none');">
+                    <div class="circle d-flex justify-center initial">R</div> &nbsp; <span class="d-tablet"><i class="fa-solid fa-chevron-down"></i></span>
+                  </div>
+                  <div class="fullname d-flex mouseClick"  onclick="toggleView('smallMenu', 'd-none');"><strong class="d-desktop userFullName"> &nbsp;</strong> <span class="d-desktop"><i class="fa-solid fa-chevron-down "  ></i> </span>
+                    
+                      <div id="smallMenu" class="d-none" >
+                        <a href="analytics.html"><i class="fa fa-home"></i>  Dashboard</a>
+                        <a href="fundraiser-profile.html"><i class="fa fa-user"></i> Profile</a> 
+                        <a href='explore.html'><i class="fa fa-bullseye"></i> Explore</a>  
+                        <a href="login.html"><i class="fa fa-sign-out"></i> Logout</a>
+                      </div>
+                  </div>
+                  
+          </div>
+      </div>
+         
+          </div>
+          <div class="d-none" id="mobile-menu"> 
+              <div class="container"> 
+                  <a href='explore.html' class="explore text ">Explore</a>
+                  <a href='analytics.html' class="explore text ">Analytic</a>
+                  <a href='explore.html' class="explore text ">Drafts</a>
+  
+                  <a href="./fndraiserCam.html" class="btn btn-color " >+ Start a project</a> 
+              </div>
+          </div>
+      </nav>
+  </div>
+      </section>
+
+      <!-- MAIN BODY -->
+      <section class="main-content">
+        <div class="main-content-heading-container">
+          <h3 class="main-content-heading">CREATE A CAMPAIGN</h3>
+          <button class="main-content-heading-btn draft-btn">
+            Save as draft
+          </button>
+        </div>
+        <p class="step-counter">STEP 3 OF 3</p>
+        <p class="form-title">Funding</p>
+
+        <form action="" class="card-details" id="campaign-form3">
+          <label for="account-number">Account Number</label>
+          <input
+            type="number"
+            name="account-number"
+            id="account-number"
+
+            placeholder="Enter account number" onkeyup="checkAccountNum()" required
+          />
+          <small id="error-msg"></small>
+
+          <label for="bank-name">Bank Name</label>
+          <select
+            name="bank-name"
+            id="bank-name"
+            placeholder="Select Bank"
+            required
+          >
+            <option value="Select Bank">Select Bank</option>
+            <option value="Access">Access</option>
+            <option value="FCMB">FCMB</option>
+            <option value="Fidelity">Fidelity</option>
+            <option value="First bank">First bank</option>
+            <option value="GTCO">GTCO</option>
+            <option value="UBA">UBA</option>
+            <option value="Union bank">Union bank</option>
+            <option value="Zenith bank">Zenith bank</option>
+          </select>
+
+          <div class="screen3-btn-group">
+            <button type="submit" class="save-cont-btn review-launch-btn">
+              Review & Launch
+            </button>
+            <button class="go-back-btn">
+              <a href="/fndraiserCam2.html">Go back</a>
+            </button>
+          </div>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <i id="info-icon" class="fa-sharp fa-solid fa-circle-info"></i>
+              <span class="modal-text">
+                <h3>Campaign Review</h3>
+                <p>Your Campaign is being reviewed</p>
+              </span>
+              <i id="arrow-icon" class="fa-sharp fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!--FOOTER SECTION-->
+      <footer id="footer-section">
+        <div class="main-container">
+          <!--logo section-->
+          <div id="logo-footer">
+            <img
+              src="./assets/images/altru-funds.svg"
+              alt="c-wallet image"
+            />
+          </div>
+
+          <!--info section-->
+          <div class="info-container-footer">
+            <ul>
+              <li><a href="aboutus.html">ABOUT US</a></li>
+              <li>|</li>
+              <li><a href="aboutus.html">HOW IT WORKS</a></li>
+              <li>|</li>
+              <li><a href="aboutus.html">SUPPORT</a></li>
+            </ul>
+
+            <div class="policy">
+              <a href="terms.html"
+                >Terms of use <span>|</span> Privacy policy</a
+              >
+            </div>
+          </div>
+
+          <!--media section-->
+
+          <div id="icon-section-footer">
+            <div id="media-footer">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              <!-- <i class="fa-brands fa-whatsapp"></i> -->
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer id="copyright">
+        <div class="main-container"> 
+            <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2022
+            C-wallet. All Right Reserved. 
+        </div>
+      </footer>
+
+      <div id="scrollup-footer">
+        <i class="fa-solid fa-angle-up"></i>
+      </div>
+
+      <script src="/assets/js/script.js"></script>
+    </section>
+
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/fndraiserCam3.js"></script>
+    <script src="/assets/js/auth.js"></script>
+        <script >
+            let auth = new Auth();
+            auth.showInitial('.initial');
+            auth.showFullName('.userFullName');
+        </script>
+  </body>
+</html>

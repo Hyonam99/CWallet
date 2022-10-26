@@ -1,0 +1,23 @@
+{
+  "name": "c-wallet",
+  "version": "1.0.0",
+  "description": "this is the guide for the typography and color, it has been linked with via a css file named \"typography_color.css\" apply the variable names where neccesary",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiidelab-Fellowship/C-Wallet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tiidelab-Fellowship/C-Wallet/issues"
+  },
+  "homepage": "https://github.com/Tiidelab-Fellowship/C-Wallet#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}

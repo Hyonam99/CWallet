@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/eed14445bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/aboutus.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+  </head>
+  <body>
+    <section id="wrapper-container">
+      <div id="nav">
+        <nav class="navbar">
+          <div
+            class="container d-flex h-60"
+            style="justify-items: flex-end; justify-content: flex-end"
+          >
+            <a href="home.html"
+              ><img
+                src="./assets/images/altru-funds-dark.svg"
+                alt="Logo"
+                class="logo"
+            /></a>
+
+            <div class="mobileContainer d-flex">
+              <div class="left d-tablet">
+                <a href="explore.html" class="explore">Explore</a>
+              </div>
+
+              <div class="right d-flex">
+                <div class="d-none d-block" id="search-icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <button
+                  type="button"
+                  class="mobileMenu d-mobile"
+                  onclick="toggleView('search-icon', 'd-block');toggleView('mobile-menu', 'd-none');toggleView('mobileIcons','fas','fa');toggleView('mobileIcons','fa-stream','fa-close');"
+                >
+                  <i class="fas fa-stream" id="mobileIcons"></i>
+                </button>
+              </div>
+
+              <div class="nav-responsive d-none">
+                <i class="d-tablet fas fa-search"></i>
+                <a href="login.html" class="">Log In</a>
+                <a href="./Register.html" class="btn btn-color"
+                  >+ Start a project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="d-none" id="mobile-menu">
+            <div class="container">
+              <a href="explore.html" class="explore text">Explore</a>
+              <a href="aboutus.html" class="explore text">About us</a>
+              <a href="login.html" class="btn btn-outline-color">Log In</a>
+              <a href="./Register.html" class="btn btn-color"
+                >+ Start a project</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!--ABOUT US SECTION-->
+      <section id="aboutus-container">
+        <h2 id="h-about-us">About us</h2>
+        <div class="">
+          For people who want to make the world a better place for everyone...
+        </div>
+        <p class="para-about1">
+          C-wallet is a crowd-funding solution platform that supports and
+          empowers individual and charities to to turn companies into actions,
+          Because that is how change happens.
+        </p>
+        <p class="para-about2">
+          With fundraising for all we are creating the giving layer of the
+          internet space where individuals, teams, organisations, have the tools
+          they need to share their cause far, wide and harness the power of
+          genorosity. we are trasforming the way people give and change lives -
+          Are you ready to join us ?
+        </p>
+      </section>
+
+      <!--OUR MISSION SECTION-->
+
+      <section class="mission-container">
+        <section class="mission-wrapper">
+          <h2 id="our-mission">Our Mission</h2>
+          <div class="mision-content">
+            <div class="details-mission">
+              <div class="round-boder"></div>
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+              <h3>Help the helpless</h3>
+            </div>
+            <div class="details-mission">
+              <div class="round-boder"></div>
+              <i class="fa-regular fa-briefcase-medical"></i>
+              <h3>Medicall assistted</h3>
+            </div>
+            <div class="details-mission">
+              <div class="round-boder"></div>
+              <i class="fa-solid fa-people-carry-box"></i>
+              <h3>Make a happy world</h3>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!--HEADER OVERLAY-->
+
+      <!--HOW-IT-WORKS-->
+      <section id="works-container">
+        <div class="works-details">
+          <h2>How C-wallet Works</h2>
+          <p>
+            C-wallet is the best place to fundraise, whether you are an
+            individual,group or an organisation.
+          </p>
+        </div>
+        <div class="cont">
+          <div class="works-video">
+            <div class="work-info">
+              <i class="fa-regular fa-circle-play"></i>
+            </div>
+          </div>
+          <div class="outside-box"></div>
+        </div>
+      </section>
+
+      <!--FAQ-->
+      <section id="faq">
+        <div class="">
+          <h4>
+            Find <span class="text-color">answers</span> to your questions
+          </h4>
+        </div>
+        <div class="faqs">
+          <ul>
+            <li id="accord-title" onclick="faqAccordion(this.id)">
+              <div class="accord-title">
+                Do Donors get Charged.
+                <i class="fa fa-plus"></i>
+              </div>
+              <div id="accord-body" class="d-none">
+                No, never. Donors are charged only the amount they choose to
+                donate to you and that’s it.
+              </div>
+            </li>
+
+            <li id="accord-title2" onclick="faqAccordion(this.id)">
+              <div class="accord-title">
+                How fundraising work on C-wallet.
+                <i class="fa fa-plus"></i>
+              </div>
+              <div id="accord-body" class="d-none">
+                The simple answer is: Share your campaign as far and wide as
+                possible, because this is how people are going to find it.
+                Social media is a great resource, so if you have Facebook,
+                Instagram, or Twitter accounts, those would be great places to
+                start. It’s also important to make sure that you have a
+                compelling fundraiser story since that is what people will read
+                to learn more about your goals.
+              </div>
+            </li>
+
+            <li id="accord-title3" onclick="faqAccordion(this.id)">
+              <div class="accord-title">
+                Can I Raise Money For Anything.
+                <i class="fa fa-plus"></i>
+              </div>
+              <div id="accord-body" class="d-none">
+                Almost. As always, common sense goes a long way here. DO raise
+                money for personal causes that are purposeful, humanitarian
+                cause and physiological cause. DON’T break any local laws,
+                expect strangers to buy you stuff or promote inappropriate
+                content.
+              </div>
+            </li>
+            <li id="accord-title4" onclick="faqAccordion(this.id)">
+              <div class="accord-title">
+                How Will I Know If Someone Donate.
+                <i class="fa fa-plus"></i>
+              </div>
+              <div id="accord-body" class="d-none">
+                You’ll receive an email notification each time a donation is
+                made to your C-wallet campaign and it will be shown on your
+                dashboard where you can track and monitor your campaign.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--CONTACT-US SECTION-->
+      <section id="contact-support">
+        <section class="contactus-container">
+          <section class="contactus-wrapper">
+            <form action="">
+              <h2>CONTACT-US</h2>
+              <h3>Our friendly team would love to hear from you!</h3>
+              <div class="contact-form">
+                <div class="contact-fullname">
+                  <div class="contact-firstname">
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="Enter firstname" class="firstname" required />
+                  </div>
+                  <div class="contact-lastname">
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="Enter lastname" class="lastname" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-form">
+                <label for="">Email</label>
+                <input
+                  type="email"
+                  placeholder="samplename@email.com"
+                  class="email"
+                  required
+                />
+              </div>
+              <div class="contact-form">
+                <label for="">Phone number</label>
+                <input type="number" placeholder="+23451744986" class="phonenumber" required />
+              </div>
+              <div class="contact-form">
+                <label for="message">Message</label>
+                <textarea
+                  id="C-message"
+                  placeholder="Write message here..."
+                  required
+                ></textarea>
+              </div>
+              <div class="contact-form">
+                <button type="submit" class="btn contactbtn">Send Message</button>
+              </div>
+            </form>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- SUPPORT SECTION
+      <section class="support">
+        <div class="wrap-support">
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+          <h2>Visit Us</h2>
+          <div>Zone 6, 2 Harare St, Wuse 900286, Abuja.</div>
+
+        </div>
+        <div class="wrap-support">
+          <i class="fa-solid fa-phone"></i>
+          <h2>Call Us</h2>
+          <div>Mon-Sat from 9am to 5pm</div>
+
+        </div>
+
+        <div class="wrap-support">
+         <i class="fa-solid fa-headphones"></i>
+          <h2>Customer Support</h2>
+          <div>c-wallet@email.com</div>
+        </div>
+      </section>
+    </section> -->
+    <!--SUPPORT SECTION-->
+    <section class="test">
+      <div class="wrap-support">
+        <i class="fa-sharp fa-solid fa-location-dot"></i>
+        <h2>Visit Us</h2>
+        <div>Zone 6, 2 Harare St, Wuse 900286, Abuja.</div>
+      </div>
+      <div class="wrap-support">
+        <i class="fa-solid fa-phone"></i>
+        <h2>Call Us</h2>
+        <div>+2348051744986</div>
+      </div>
+
+      <div class="wrap-support">
+        <i class="fa-solid fa-headphones"></i>
+        <h2>Customer Support</h2>
+        <div>c-wallet@email.com</div>
+      </div>
+    </section>
+
+    <!--FOOTER SECTION-->
+    <footer id="footer-section">
+      <div class="main-container">
+        <!--logo section-->
+        <div id="logo-footer">
+          <img
+            src="./assets/images/altru-funds.svg"
+            alt="c-wallet image"
+          />
+        </div>
+
+        <!--info section-->
+        <div class="info-container-footer">
+          <ul>
+            <li><a href="#aboutus-container">ABOUT US</a></li>
+            <li>|</li>
+            <li><a href="#works-container">HOW IT WORKS</a></li>
+            <li>|</li>
+            <li><a href="#contact-support">SUPPORT</a></li>
+          </ul>
+
+          <div class="policy">
+            <a href="">Terms of use <span>|</span> Privacy policy</a>
+          </div>
+        </div>
+
+        <!--media section-->
+
+        <div id="icon-section-footer">
+          <div id="media-footer">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            <!-- <i class="fa-brands fa-whatsapp"></i> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer id="copyright">
+      <div class="main-container"> 
+          <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2022
+          C-wallet. All Right Reserved.. 
+      </div>
+    </footer>
+
+    <div id="scrollup-footer">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/contactSupport.js"></script>
+  </body>
+</html>
