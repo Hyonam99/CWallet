@@ -1,0 +1,81 @@
+* {box-sizing:border-box}
+
+.cslideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.cmySlides {
+  display: none;
+}
+
+.cprev, .cnext {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.cnext {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.cprev:hover, .cnext:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.ctext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.cnumbertext {
+  color: #917a7a;
+  font-size: 12px;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+}
+
+.cdot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.cactive, .cdot:hover {
+  background-color: #717171;
+}
+
+.cfade {
+  animation-name: cfade;
+  animation-duration: 1.5s;
+}
+
+@keyframes cfade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* All credits goes to W3Schools - https://www.w3schools.com/howto/howto_js_slideshow.asp */

@@ -1,0 +1,92 @@
+@media only screen and (max-width: 640px) {  /*  Mobile Design */
+    #main-content-section {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.3rem;
+        align-items: center;
+
+    }
+
+    .left-main-section {
+        display: block;
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 300px;
+        height: 400px;
+        top: 30%;
+        left: 50%;
+    }
+    
+    .close-modal-btn {
+        font-size: 25px;
+        top: 2%;
+        right: 2%;
+    }
+
+    .bank-container {
+        width: 90%;
+        height: 90%;
+    }
+
+    #sent-money-btn {
+        width: 80%;
+    }
+
+    .form-group-container {
+        display: block;
+    }
+
+    .form-groups {
+        margin-bottom: 30px;
+    }
+
+    .form-groups input {
+        width: 100%;
+    }
+
+    .choose-payment-container {
+        border-top: 1px solid #F2F2F2;
+    }
+
+    .radio-btn-container {
+        display: block;
+    
+    }
+
+    .radio-btn-input {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .leave-a-comment-section {
+        border-top: 1px solid #F2F2F2;
+    }
+
+    #comment-area {
+        width: 100%;
+        height: 200px;
+    }
+
+    .save-cont-btn {
+        width: 100%;    
+    }
+
+    .go-up-btn {
+        display: none;
+    }
+
+    .right-main-section {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 640px) { /*  Tablet and  */
+
+}

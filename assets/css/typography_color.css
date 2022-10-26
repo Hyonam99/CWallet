@@ -1,0 +1,27 @@
+@import url('http://fonts.cdnfonts.com/css/dm-sans?styles=50588,50585,50586,50587,50583,50584');
+/* @import url('http://fonts.cdnfonts.com/css/dm-sans?styles=50588');
+@import url('http://fonts.cdnfonts.com/css/dm-sans?styles=50584');
+                 */
+:root {
+  --black: rgba(30, 30, 30, 1);
+  --grey-text: rgba(153, 153, 153, 1);
+  --primary-color: rgba(243, 101, 35, 1);
+  --light-orange: rgba(248, 173, 138, 1);
+  --white: rgba(255, 255, 255, 1);
+  --purple-text: #9747FF;
+
+  /* --body-text: 16px;
+  --body-descriptions: 18px;
+  --sub-heading-description: 20px;
+  --fs-xxx1: 24px;
+  --fs-xxxx1: 32px;
+  --fs-xxxx2: 48px; */
+
+  --heading-bold: 700 48px DM Sans;  /*this is for the main heading*/
+  --sub-heading-medium: 500 32px DM Sans; /*this is for the sub-heading*/
+  --heading-description: 500 24px DM Sans; /*this is for the heading descriptions after any heading title*/
+  --heading-regular: 300 24px DM Sans; /*this is a regular description for heading with a lighter font-weight*/
+  --body-regular: 100 18px DM Sans; /*this is for the texts of the body*/
+  --body-small: 100 16px DM Sans; /*this is small texts for the body*/
+
+}

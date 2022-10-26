@@ -1,0 +1,162 @@
+.main-container {
+  width: 85%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/*Footer Section*/
+#footer-section {
+  background-color: #1f1f1f;
+  margin: auto auto;
+}
+#footer-section > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+  padding-top: 60px;
+}
+
+#logo-footer img {
+  height: 3.5rem;
+}
+
+.info-container-footer {
+  text-align: center;
+  margin: auto;
+}
+
+.info-container-footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+.info-container-footer ul li {
+  color: var(--grey-text);
+  list-style: none;
+}
+.info-container-footer ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--text-white);
+  padding: 1rem;
+  font-size: 14px;
+}
+
+.policy {
+  padding: 20px 0;
+}
+.policy a {
+  color: #f36523;
+  text-decoration: none;
+}
+
+.policy a span {
+  color: #fff;
+  font-weight: bold;
+}
+
+#media-footer i {
+  padding: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#media-footer {
+  padding-right: 50px;
+}
+
+#copyright {
+  background-color: #1f1f1f;
+  padding: 25px 0; 
+  text-align: center;
+  color: #fff;
+} 
+
+#scrollup-footer i {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  border: 1px solid #f36523;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #f36523;
+  z-index: 100;
+}
+.fa-angle-up {
+  padding-top: 10px;
+}
+.fa-whatsapp {
+  color: orange;
+}
+.copyright-footer {
+  margin-left: 5rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .main-container {
+    width: 95%;
+    max-width: 565px;
+    margin: auto;
+  }
+
+  #footer-section > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 60px;
+  }
+  #footer-section > div > div {
+    padding: 10px 0;
+  }
+
+  .policy {
+    padding-top: 50px 0;
+  }
+  #copyright {
+    text-align: center;
+  }
+  #copyright p {
+   /*  padding: 0rem 8rem; */
+  }
+  .copyright-footer {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /*  Mobile Design */
+  .main-container {
+    width: 95%;
+    max-width: 565px;
+    margin: auto;
+  }
+
+  #footer-section > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 60px;
+  }
+  #footer-section > div > div {
+    padding: 10px 0;
+  }
+
+  .policy {
+    padding-top: 50px 0;
+  }
+  #copyright {
+    text-align: center;
+  }
+  #copyright p {
+    padding: 0rem 8rem;
+  }
+  .copyright-footer {
+    margin-left: 0;
+  }
+}

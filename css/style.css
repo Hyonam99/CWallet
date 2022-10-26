@@ -1,0 +1,167 @@
+/* COLORS
+light === #FF5B00
+darker === #EE5007
+*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(244, 241, 241);
+    /* box-sizing: border-box; */
+    line-height: 1.7;
+}
+
+.header {
+    padding-top: 0;
+    height: 100vh;
+    width: auto;
+    background-image: linear-gradient(rgb(32, 32, 32, 0.7),
+            rgb(32, 32, 32, 0.7)),
+        url(../assets/images/c-wallet-img.jpg);
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.header__nav {
+    height: 45px;
+    width: auto;
+    background-color: rgb(253, 242, 242);
+    /* display: flex;
+    align-items: center; */
+}
+
+.logo-link {
+    width: 50%;
+    display: inline-block;
+}
+
+.logo-link ul {
+    margin-top: 3px;
+    list-style: none;
+    display: flex;
+}
+
+.logo-link ul li {
+    /* display: inline-block; */
+    margin-left: 20px;
+}
+
+.logo-link ul li img {
+    height: 25px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.logo-link ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(20, 19, 19);
+    cursor: pointer;
+}
+
+.header__activation-buttons {
+    float: right;
+    margin-top: 10px;
+    width: -50%;
+    margin-right: 10px;
+}
+
+.header__activation-buttons ul {
+    list-style: none;
+    display: flex;
+}
+
+.header__activation-buttons ul li {
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+#search-btn {
+    /* display: inline-block; */
+    color: #070707;
+    height: 10px;
+    width: auto;
+}
+
+.header__login-btn {
+    color: #ff5b00;
+    text-decoration: none;
+}
+
+.header__start-btn {
+    border: 1px solid;
+    border: 20px;
+    color: rgb(253, 242, 242);
+    background-color: #FF5B00;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.header__start-btn:hover,
+.header__start-btn:active {
+    border: 1px solid;
+    border: 20px;
+    color: rgb(253, 242, 242);
+    background-color: #EE5007;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.page--text {
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-top: 190px;
+    font-weight: 400;
+}
+
+.page--span-colored {
+    color: #ff5b00;
+}
+
+.explore-btn a {
+    padding: 5px 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.explore-btn a:hover,
+.explore-btn a:active {
+    padding: 5px 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(16, 15, 15);
+    background-color: #EE5007;
+    transition: all 0.4s;
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+}

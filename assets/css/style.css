@@ -1,0 +1,117 @@
+/* COLORS
+light === #FF5B00
+darker === #EE5007
+*/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* padding: 0; */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(244, 241, 241);
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+
+.header {
+  padding-top: 0;
+  height: 100vh;
+  width: auto;
+  background-image: linear-gradient(
+      to bottom right,
+      rgb(32, 32, 32, 0.7),
+      rgb(32, 32, 32, 0.7)
+    ),
+    url(./assets/images/c-wallet-img.jpg);
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #fff;
+}
+#nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 40px;
+  padding-right: 40px;
+}
+
+.header__logo-box {
+  padding: 50px 30px;
+}
+
+.header__logo-box-image {
+  height: 50px;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+#bar {
+  color: #ccbfbf;
+  font-size: 30px;
+  font-weight: 200;
+}
+.explore {
+  padding: 0px 10px;
+  text-decoration: none;
+  color: #1f1f1f;
+  cursor: pointer;
+}
+.header__activation-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 60px;
+  padding-right: 20px;
+}
+
+.fa-magnifying-glass {
+  margin-right: 20px;
+  color: #aa9f9f;
+}
+
+.header__login-btn {
+  color: #ff5b00;
+  margin-right: 20px;
+}
+
+.header__start-btn {
+  border: 1px solid;
+  border: 20px;
+  color: rgb(253, 242, 242);
+  background-color: #ff5b00;
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.header__start-btn :hover,
+:active {
+  border: 1px solid;
+  height: 40px;
+  background-color: #ff834a;
+  transition: all 0.6s;
+}
+ 
